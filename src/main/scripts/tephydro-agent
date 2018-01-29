@@ -1,0 +1,128 @@
+#!/bin/sh
+#
+# tephydro-agent          Start/Stop the TepQuichWin WebServer Agent daemon.
+#
+# chkconfig: - 80 20
+# description: Tep Hydrology WebServer agent is program that runs Tep Hydrology WebServer actions \
+#              at periodic scheduled times. 
+
+### BEGIN INIT INFO
+# Provides: tephydro-agent
+# Required-Start: $local_fs $syslog $network
+# Required-Stop: $local_fs $syslog $network
+# Default-Start:  3 5
+# Default-Stop: 0 1 2 6
+# Short-Description: tephydro Agent Daemon
+# Description: tephydro WebServer agent is program that runs tephydro WebServer actions
+#              at periodic scheduled times. 
+### END INIT INFO
+
+agentpath="/usr/local/tephydro/webserver/sites/tephydro/root/bin"
+prog="Terradue.Portal.Agent.exe"
+pidfile=/var/run/tephydro-agent.pid
+lockfile=/var/lock/subsys/$prog
+
+RETVAL=0
+
+# Check if $pid (could be plural) are running
+checkpid() {
+	local i
+
+	for i in $* ; do
+		[ -d "/proc/$i" ] && return 0
+	done
+	return 1
+}
+
+start() {
+    echo -n $"Starting $prog: "
+        if [ -f $lockfile ] ; then
+                if [ -f $pidfile ]; then
+                        read kpid < $pidfile
+                        if checkpid $kpid 2>&1; then
+                                echo "process already running"
+                                        return 1;
+                                else
+                                        echo "lock file found but no process running for pid $kpid, continuing"
+                        fi
+                fi
+        fi
+
+        export tephydroAGENTD_PID=$pidfile
+        touch $pidfile
+        # Handle transition from root to non-root packages.
+        mono $agentpath/$prog > /var/log/tephydro-agent.log 2>&1 &
+        pid=$!
+        echo $pid >$pidfile
+
+        RETVAL=$?
+        echo
+                [ $RETVAL -eq 0 ] && touch $lockfile
+        return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+        kill `cat $pidfile`
+
+        RETVAL=$?
+        echo
+        [ $RETVAL -eq 0 ] && rm -f $lockfile $pidfile
+        return $RETVAL
+}
+
+restart() {
+    stop
+    start
+}
+
+reload() {
+        restart
+}
+
+force_reload() {
+        # new configuration takes effect after restart
+    restart
+}
+
+rh_status() {
+    # run checks to determine if the service is running or use generic status
+     status $prog
+}
+
+rh_status_q() {
+    rh_status >/dev/null 2>&1
+}
+
+
+case "$1" in
+    start)
+        rh_status_q && exit 0
+        $1
+        ;;
+    stop)
+        rh_status_q && exit 0
+        $1
+        ;;
+    restart)
+        $1
+        ;;
+    reload)
+        rh_status_q || exit 7
+        $1
+        ;;
+    force-reload)
+        force_reload
+        ;;
+    status)
+        rh_status
+        ;;
+    condrestart|try-restart)
+        rh_status_q || exit 0
+        restart
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|status|restart|condrestart|try-restart|reload|force-reload}"
+        exit 2
+esac
+exit $?

@@ -1,0 +1,52 @@
+
+.partners h3 {
+	margin: 0px;
+}
+
+.partners .pageTitle {
+	background-image: url(../img/partners.jpg);
+	background-position: 0px 2%;
+}
+
+.partners-logo {
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 6px;
+	height: 112px;
+	margin: auto;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.partners-logo>img {
+	max-width: 100%;
+    max-height: 100%;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.partners-logo:hover{
+	-webkit-box-shadow: 0px 0px 6px gray;
+	-moz-box-shadow: 0px 0px 6px gray;
+	box-shadow: 0px 0px 6px gray;
+}
+
+/* responsive */
+/* Landscape phone to portrait tablet */
+@media (max-width: 979px) {
+	.partners-logo {
+		border: none;
+		border-radius: 6px;
+		padding: 6px;
+		max-width: 200px;
+		display: block;
+		height: auto;
+	}
+	.partners-logo:hover{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+

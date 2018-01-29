@@ -1,0 +1,221 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            -180.0,
+                            90.0
+                        ],
+                        [
+                            180.0,
+                            90.0
+                        ],
+                        [
+                            180.0,
+                            -90.0
+                        ],
+                        [
+                            -180.0,
+                            -90.0
+                        ],
+                        [
+                            -180.0,
+                            90.0
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "id": "https://geohazards-tep.eo.esa.int/t2api/apps/search?uid=global&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "geohazards-tep@esa.int",
+                        "name": "GEP Content Authority",
+                        "uri": "https://geohazards-tep.eo.esa.int/t2api/users/geohazards-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "content": {
+                	"@href": "/geobrowser/thematicAppContent.html"
+                },
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "https://geohazards-tep.eo.esa.int/t2api/apps/search?uid=global",
+                "links": [
+                    {
+                        "@href": "https://geohazards-tep.eo.esa.int/t2api/apps/search?uid=global&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://geohazards-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    }
+                ],
+                "offering": [
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/datacontext",
+                        "styleSet": [
+                            {
+                                "abstract": "Sentinel 1 Insar Browse",
+                                "default": "true",
+                                "name": "Sentinel 1 Insar Browse",
+                                "title": "Sentinel 1 Insar Browse"
+                            }
+                        ]
+                    },
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/opensearch",
+                        "operation": [
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://data2.terradue.com/eop/dlr-insarql/dataset/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "Sentinel 1 Insar Browse"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://data2.terradue.com/eop/scihub/dataset/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "Sentinel 1"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://data2.terradue.com/eop/sentinel2/dataset/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "Sentinel 2"
+                            }
+                            
+                        ]
+                    },
+                    {
+						"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/basemaps",
+						"styleSet": [
+                            {
+                                "abstract": "Default map",
+                                "content": "tepgeohazards.l6mdm2gn",
+                                "name": "Default",
+                                "type": "mapbox"
+                            },
+                            {
+                                "abstract": "Light Map",
+                                "content": "tepgeohazards.l6md4p2l",
+                                "name": "Light Map",
+                                "default": "true",
+                                "type": "mapbox"
+                            },
+                            {
+                                "abstract": "Natural Earth",
+                                "content": "tepgeohazards.l6md2364",
+                                "name": "Natural Earth",
+                                "type": "mapbox"
+                            },
+                            {
+                                "abstract": "Dark Map",
+                                "content": "tepgeohazards.l6mdoh89",
+                                "name": "Dark Map",
+                                "type": "mapbox"
+                            },
+                            {
+                                "abstract": "Google Road Map",
+                                "content": "ROADMAP",
+                                "name": "Google Road Map",
+                                "type": "google"
+                            }
+                        ]
+                   	},
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/mapfeatures",
+                        "styleSet": [
+                            {
+                                "abstract": "Charter Activations",
+                                "content": {
+                                    "@href": "/t2api/disastercharter"
+                                },
+                                "default": "true",
+                                "name": "Charter Activations",
+                                "type": "background"
+                            },
+                            {
+                                "abstract": "Sentinel-1A SAR IW Level-0 Density Map",
+                                "content": {
+                                    "@href": "https://va4h01.esa.int/geoserver/S1A_DENSITYMAPS_GLOBAL/S1A_IW_RAW_.global.spatial-coverage/ows"
+                                },
+                                "name": "Sentinel-1A SAR IW Level-0 Density Map",
+                                "type": "layer"
+                            },
+                            {
+                                "abstract": "Sentinel-1A SAR IW SLC Density Map",
+                                "content": {
+                                    "@href": "https://va4h01.esa.int/geoserver/S1A_DENSITYMAPS_GLOBAL/S1A_IW_SLC_.global.spatial-coverage/ows"
+                                },
+                                "name": "Sentinel-1A SAR IW SLC Density Map",
+                                "type": "layer"
+                            },
+                            {
+                                "abstract": "ERS+ENVISAT SAR IM Level-0 Density Map",
+                                "content": {
+                                    "@href": "https://va4h01.esa.int/geoserver/VA4_DENSITYMAPS_GLOBAL/L0-SAR-IM.global.spatial-coverage/ows"
+                                },
+                                "name": "ERS+ENVISAT SAR IM Level-0 Density Map",
+                                "type": "layer"
+                            }
+                        ]
+                    },
+                    {
+                        "@code": "http://www.opengis.net/spec/owc/1.0/req/atom/wps",
+                        "operation": {
+                            "@code": "ListProcess",
+                            "@href": "/t2api/service/wps/search",
+                            "@method": "GET",
+                            "@type": "application/json"
+                        }
+                    }
+                ],
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "This is the OWS context definining the Geohazards thematic application as per version 1 of the platform.",
+                "title": "Geohazards global thematic application",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": {
+        "box": "90 -180 -90 180",
+        "categories": [
+            {
+                "@label": "Thematic Application",
+                "@scheme": "http://www.terradue.com/feed",
+                "@term": "thematicapplication"
+            }
+        ],
+        "links": [
+            {
+                "@href": "https://geohazards-tep.eo.esa.int/t2api/apps/search?q=global&format=atom",
+                "@rel": "self",
+                "@title": "Reference link",
+                "@type": "application/atom+xml"
+            },
+            {
+                "@href": "https://geohazards-tep.eo.esa.int/t2api/apps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+        "publisher": "Terradue",
+        "title": "Geohazards thematic applications search results",
+        "totalResults": "0",
+        "updated": "2016-03-08T10:26:04Z"
+    },
+    "type": "FeatureCollection"
+}

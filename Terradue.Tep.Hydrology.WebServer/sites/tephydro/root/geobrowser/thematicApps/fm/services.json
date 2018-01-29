@@ -1,0 +1,157 @@
+{
+    "features": [
+        {
+            "id": "http://127.0.0.1:8083/t2api/service/wps/search?id=e5896b32-924e-424e-9217-1b8925fd51fa",
+            "properties": {
+                "categories": [
+                    {
+                        "@label": null,
+                        "@scheme": null,
+                        "@term": "WpsOffering"
+                    }
+                ],
+                "content": "This service, developed by TRE-Altamira, allows users to generate water mask, water frequency maps, flood maps, flood frequency maps and produce statistics from a list of water masks already generated.",
+                "identifier": "e5896b32-924e-424e-9217-1b8925fd51fa",
+                "links": [
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                        "@rel": "alternate"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/service/wps/search?id=e5896b32-924e-424e-9217-1b8925fd51fa",
+                        "@rel": "self",
+                        "@title": "pconvert",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/service/wps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/geobrowser/thematicApps/fm/floodmap.jpg",
+                        "@rel": "icon",
+                        "@title": "Flood map icon",
+                        "@type": "image/jpeg"
+                    }
+                ],
+                "categories": [
+        {
+            "@term": "sandbox",
+            "@label": "Developer Cloud Sandbox",
+            "@scheme": null
+            }
+        ],
+                "offering": {
+                    "operation": [
+                        {
+                            "@code": "GetCapabilities",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "DescribeProcess",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=DescribeProcess&version=1.0&identifier=e5896b32-924e-424e-9217-1b8925fd51fa",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "Execute",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=Execute&version=1.0&identifier=e5896b32-924e-424e-9217-1b8925fd51fa",
+                            "@method": "POST"
+                        }
+                    ]
+                },
+                "publisher": "Altamira",
+                "title": "Flood Mapping service from TRE-Altamira",
+                "updated": "2016-05-27T10:49:14Z"
+            },
+            "type": "Feature"
+        },
+                {
+            "id": "http://127.0.0.1:8083/t2api/service/wps/search?id=17af570f-8992-4a42-a210-7df2faca8906",
+            "properties": {
+                "categories": [
+                    {
+                        "@label": null,
+                        "@scheme": null,
+                        "@term": "WpsOffering"
+                    }
+                ],
+                "content": "This service, developed by TRE-Altamira, allows users to generate water mask, water frequency maps, flood maps, flood frequency maps and produce statistics from a list of water masks already generated.",
+                "identifier": "17af570f-8992-4a42-a210-7df2faca8906",
+                "links": [
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                        "@rel": "alternate"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/service/wps/search?id=17af570f-8992-4a42-a210-7df2faca8906",
+                        "@rel": "self",
+                        "@title": "pconvert",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/t2api/service/wps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },
+                    {
+                        "@href": "http://127.0.0.1:8083/geobrowser/thematicApps/fm/floodmap.jpg",
+                        "@rel": "icon",
+                        "@title": "Flood map icon",
+                        "@type": "image/jpeg"
+                    }
+                ],
+                "offering": {
+                    "operation": [
+                        {
+                            "@code": "GetCapabilities",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "DescribeProcess",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=DescribeProcess&version=1.0.0&identifier=17af570f-8992-4a42-a210-7df2faca8906",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "Execute",
+                            "@href": "http://127.0.0.1:8083/t2api/wps/WebProcessingService?service=WPS&request=Execute&version=1.0.0&identifier=17af570f-8992-4a42-a210-7df2faca8906",
+                            "@method": "POST"
+                        }
+                    ]
+                },
+                "publisher": "Altamira",
+                "title": "Flood Mapping service from TRE-Altamira (Cluster)",
+                "updated": "2016-05-27T10:49:14Z"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": {
+        "Query": {
+            "@os:count": "2"
+        },
+        "identifier": "service/wps",
+        "itemsPerPage": "2",
+        "links": [
+            {
+                "@href": "http://127.0.0.1:8083/t2api/service/wps?format=json&count=2",
+                "@rel": "alternate"
+            },
+            {
+                "@href": "http://127.0.0.1:8083/t2api/service/wps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+        "startIndex": "1",
+        "title": "Discovery feed for service/wps",
+        "totalResults": "16",
+        "updated": "2016-04-26T12:49:14Z"
+    },
+    "type": "FeatureCollection"
+}

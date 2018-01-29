@@ -1,0 +1,29 @@
+
+.aboutPage .pageTitle {
+	background-image: url(../img/hydro3.jpg);
+}
+
+.aboutPage .about > .span4 {
+	text-align: center;
+}
+
+.aboutPage .about p {
+    text-align: justify;
+}
+
+.aboutPage iframe {
+    margin: auto;
+    display: block;
+}
+
+.aboutPage h3 {
+	color: #72b7ce;
+}
+
+.aboutPage .item > a {
+	background-size: cover;
+	height: 168px;
+	border-radius: 3px;
+	background-position: 0px 50%;
+	display: block;
+}

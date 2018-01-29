@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<wps:ProcessDescriptions service="WPS" version="1.0.0" xml:lang="en" xmlns:wps="http://www.opengis.net/wps/1.0.0">
+  <ProcessDescription statusSupported="true" storeSupported="true" wps:processVersion="1.0">
+    <Identifier xmlns="http://www.opengis.net/ows/1.1">The objective of this exercise is to retrieve surface water temperature (here termed SST) from Advanced Along-Track Scanning Radiometer (AATSR) data at 1 km resolution.</Identifier>
+    <Title xmlns="http://www.opengis.net/ows/1.1">WOIS - Lake Temperature</Title>
+    <Abstract xmlns="http://www.opengis.net/ows/1.1"/>
+    <DataInputs>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">CRSprojection</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">CRS projection</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">CRS projection</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">string</DataType>
+          <AllowedValues xmlns="http://www.opengis.net/ows/1.1">
+            <Value>EPSG:4326</Value>
+          </AllowedValues>
+        </LiteralData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">Resamplingmethod</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Resampling method</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Resampling method</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">string</DataType>
+          <AllowedValues xmlns="http://www.opengis.net/ows/1.1">
+            <Value>Nearest</Value>
+            <Value>Bilinear</Value>
+            <Value>Bicubic</Value>
+          </AllowedValues>
+        </LiteralData>
+      </Input>
+    </DataInputs>
+    <ProcessOutputs>
+      <Output>
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">productionResults</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">URL to the production result(s)</Title>
+        <ComplexOutput>
+          <Default>
+            <Format>
+              <MimeType>application/octet-stream</MimeType>
+            </Format>
+          </Default>
+          <Supported>
+            <Format>
+              <MimeType>application/octet-stream</MimeType>
+            </Format>
+          </Supported>
+        </ComplexOutput>
+      </Output>
+    </ProcessOutputs>
+  </ProcessDescription>
+</wps:ProcessDescriptions>

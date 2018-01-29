@@ -1,0 +1,13 @@
+
+.logos > div {
+	text-align: center;
+}
+
+.logos a [class^="icon-"]:hover {
+	text-decoration: none;
+}
+
+.logos h4 > a {
+	color: #656565;
+	border-top: 3px solid;
+}

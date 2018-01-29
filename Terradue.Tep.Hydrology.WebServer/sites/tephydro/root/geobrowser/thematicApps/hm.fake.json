@@ -1,0 +1,245 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            -180.0,
+                            90.0
+                        ],
+                        [
+                            180.0,
+                            90.0
+                        ],
+                        [
+                            180.0,
+                            -90.0
+                        ],
+                        [
+                            -180.0,
+                            -90.0
+                        ],
+                        [
+                            -180.0,
+                            90.0
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "id": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=hm&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "hydrology-tep@esa.int",
+                        "name": "HEP Content Authority",
+                        "uri": "https://hydrology-tep.eo.esa.int/t2api/users/geohazards-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "content": {
+                	"@href": "/geobrowser/nigerAppContent.html"
+                },
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=hm",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=hm&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    }
+                ],
+                "offering": [
+                    
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/datacontext",
+                        "styleSet": [
+                            {
+                                "abstract": "Legacy collections to be discarded when all new collections shall be recovered",
+                                "default": "true",
+                                "legendURL": {
+                                    "@href": "http://www.terradue.com/images/logo-t2.png",
+                                    "@type": "image/png"
+                                },
+                                "name": "EO Data/Legacy Collections",
+                                "title": "Default Data Collections"
+                            },
+                            {
+                                "abstract": "Data collection with dataset of products resulting of a processing on the platform",
+                                "name": "EO-based products",
+                                "title": "EO based Data Collections"
+                            }
+                        ]
+                    },
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/opensearch",
+                        "operation": [
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://catalog.terradue.com/envisat/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "EO Data/ENVISAT"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://catalog.terradue.com/sentinel1/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "EO Data/Sentinel-1"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://catalog.terradue.com/sentinel2/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "EO Data/Sentinel-2"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://catalog.terradue.com/hydropub/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "Publications"
+                            },
+                            {
+                                "@code": "DescribeDataset",
+                                "@href": "https://catalog.terradue.com/hydro-fm-results/description",
+                                "@method": "GET",
+                                "@type": "application/opensearchdescription+xml",
+                                "datacontext": "Community"
+                            }
+                        ]
+                    },
+                    {
+                    	"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/opensearchtable"
+                    },
+                    {
+                    	"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/datapackage",
+                    	"operation": [
+                    		{
+	                            "@code": "Search",
+	                            "@href": "/data/package/search?format=json",
+	                            "@method": "GET",
+	                            "@type": "application/json"
+                    		}
+                        ]
+                    },
+                    {
+                    	"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/featuresbasket",
+                    	"operation": {
+	                            "@code": "Description",
+	                            "@href": "/t2api/data/package/default/description",
+	                            "@method": "GET",
+	                            "@type": "application/json"
+                    	}                        
+                    },
+	                   	
+                    {
+						"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/basemaps",
+						"styleSet": [
+                            {
+                                "type": "mapbox",
+                                "abstract": "Default map",
+                                "content": "tepgeohazards.l6mdm2gn",
+                                "name": "Default",
+								"default": "true"
+                            },
+                            {
+                                "type": "wms",
+                                "name": "niger_river_background",
+                                "title": "Niger river background",
+                                "abstract": "Niger river background map",
+                                "content": {
+                                    "@href": "http://hypeweb.smhi.se/nigerhype/map/niger.map",
+                                    "@type": "image/png"
+                                },
+                                "attribution": "SMHI &copy;"
+                            }
+                        ]
+                   	},
+                    {
+						"@code": "http://www.terradue.com/spec/owc/1.0/req/atom/geobrowserplugin",
+						"styleSet": [
+                            {
+                                "type": "identifier",
+                                "name": "pluginId",
+                                "content": "nigerRiverBasin"
+                            }
+                        ]
+                   	},
+                    {
+                        "@code": "http://www.terradue.com/spec/owc/1.0/req/atom/mapfeatures",
+                        "styleSet": [
+                            {
+                                "type": "wms",
+                                "name": "niger_river_background",
+                                "title": "Niger river background",
+                                "abstract": "Niger river background map",
+                                "content": {
+                                    "@href": "http://hypeweb.smhi.se/nigerhype/map/niger.map",
+                                    "@type": "image/png"
+                                },
+                                "transparent": "false",
+                                "attribution": "SMHI &copy;",
+                                "default": true
+                            }
+                        ]
+                    },
+                    {
+                        "@code": "http://www.opengis.net/spec/owc/1.0/req/atom/wps",
+                        "operation": {
+                            "@code": "ListProcess",
+                            "@href": "/geobrowser/thematicApps/hm/services.json",
+                            "@method": "GET",
+                            "@type": "application/json"
+                        }
+                    }
+                ],
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "This is the OWS context definining the Geohazards thematic application as per version 1 of the platform.",
+                "title": "Niger river basin",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": {
+        "box": "90 -180 -90 180",
+        "categories": [
+            {
+                "@label": "Thematic Application",
+                "@scheme": "http://www.terradue.com/feed",
+                "@term": "thematicapplication"
+            }
+        ],
+        "links": [
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?q=hm&format=atom",
+                "@rel": "self",
+                "@title": "Reference link",
+                "@type": "application/atom+xml"
+            },
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+        "publisher": "Terradue",
+        "title": "hydrology thematic applications search results",
+        "totalResults": "0",
+        "updated": "2016-03-08T10:26:04Z"
+    },
+    "type": "FeatureCollection"
+}

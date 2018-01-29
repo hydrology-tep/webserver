@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1 http://maven.apache.org/xsd/assembly-1.1.1.xsd">
+
+	<id>assemble</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	
+	<fileSets>
+		<fileSet>
+			<directory>${basedir}/${projectDir}/modules</directory>
+			<outputDirectory>modules</outputDirectory>
+			<includes>
+				<include>**/db/*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/${projectDir}/core</directory>
+			<outputDirectory>core</outputDirectory>
+			<includes>
+				<include>db/*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/${projectDir}/sites</directory>
+			<outputDirectory>sites</outputDirectory>
+			<includes>
+				<include>**/db/*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/src/main/web-resources</directory>
+			<outputDirectory>sites/${deploy.site}</outputDirectory>
+			<includes>
+				<include>db/*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/src/main/web-resources</directory>
+			<filtered>true</filtered>
+			<outputDirectory>sites/${deploy.site}</outputDirectory>
+			<includes>
+				<include>config/*</include>
+				<include>etc/shibboleth/*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/www-root</directory>
+			<outputDirectory>sites/${deploy.site}/root</outputDirectory>
+			<excludes>
+				<exclude>bin/live.dll</exclude>
+				<exclude>bin/*.mdb</exclude>
+				<exclude>web.config</exclude>		
+			</excludes>
+		</fileSet>
+	</fileSets>
+
+</assembly>
+

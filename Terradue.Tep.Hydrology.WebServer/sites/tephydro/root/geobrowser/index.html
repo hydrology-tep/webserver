@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEP Hydrology - Geobrowser</title>
+
+<link rel="shortcut icon" href="/favicon.jpg" type="image/jpeg">
+
+<!-- import css -->
+<link href="/scripts/libs/jquery.layout/jquery.layout-1.3.0.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/jquery-ui/jquery-ui-1.10.3.custom.css" type="text/css" rel="stylesheet" />
+
+<link href="/scripts/libs/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/bootstrap/css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/font-awesome-4.5.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/jquery.loadmask/jquery.loadmask.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/jquery.jScrollPane/css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+
+<!-- <link href='//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' /> -->
+<!-- <link href='/scripts/libs/mapbox/mapbox.css' rel='stylesheet' /> -->
+<link href='/scripts/libs/leaflet 0.7.7/leaflet.css' rel='stylesheet' />
+<!-- <link href='/scripts/libs/leaflet/leaflet.css' rel='stylesheet' /> -->
+<link href="/scripts/libs/leaflet.expandible.control/css/leaflet.expandible.control.css" rel="stylesheet" type="text/css" />
+<link href="/scripts/libs/leaflet.draw/css/leaflet.draw.css" rel="stylesheet" type="text/css" />
+<link href="/scripts/libs/leaflet.button.control/css/leaflet.button.control.css" rel="stylesheet" type="text/css" />
+<link href='/scripts/libs/leaflet.control.layers2/leafletControlLayers2.css' rel='stylesheet' />
+
+<link href="/scripts/libs/jquery.opensearchFormIt/css/opensearchFormIt.css" rel="stylesheet" type="text/css" />
+<link href="/scripts/libs/messenger/css/messenger.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/messenger/css/messenger-spinner.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/messenger/css/messenger-theme-air.css" type="text/css" rel="stylesheet" />
+
+<!-- <link href="/scripts/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" type="text/css" rel="stylesheet" /> -->
+<link href="/scripts/libs/datePicker/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
+
+<link href="/scripts/libs/bootstrap.colorPicker/css/bootstrap-colorpicker.min.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/jqrange/css/classic-min.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.locationfilter/locationfilter.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.markercluster/css/MarkerCluster.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.markercluster/css/MarkerCluster.Default.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.dvf/css/dvf.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.dvf/css/earthquakes.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/leaflet.contextmenu/leaflet.contextmenu.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/prettify/css/prettify.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/jquery.copyableInput/css/jquery.copyableInput.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/select2/css/select2.min.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/libs/nprogress/css/nprogress.css" type="text/css" rel="stylesheet"/>
+
+<link href="/scripts/modules/share/css/share.css" type="text/css" rel="stylesheet" />
+
+<!-- GEOBROWSER -->
+<link href="/scripts/geobrowser/css/app.css" type="text/css" rel="stylesheet" />
+<link href="/scripts/geobrowser/css/wpsPanel.css" type="text/css" rel="stylesheet" />
+
+<!-- page css -->
+<!-- <link href="styles/css/main.css" type="text/css" rel="stylesheet" /> -->
+</head>
+<body>
+
+<div class="geobrowser-loader-container">
+	<div class="geobrowser-loader">
+		<span class="fa-stack fa-lg loaderIcon">
+			<i class="fa fa-gear fa-spin fa-stack-2x"></i>
+			<i class="fa fa-globe fa-stack-1x"></i>
+		</span>
+		<h2 class="title">Your application is loading...</h2>
+	</div>
+	<div class="geobrowser-error" style="display: none;">
+		<i class="fa fa-exclamation-triangle errorIcon"></i>
+		<h2 class="title"></h2>
+		<h4 class="subTitle"></h4>
+		<p>Go back to <a href="/">TEP Hydrology</a> or <a href="mailto:hydrology-tep@esa.int">contact us</a>.</p>
+	</div>
+</div>
+
+<div id="layoutContainer">
+</div>
+
+<div class="sharedContentLoader">
+  <div class="well">
+    <p class="lead"><i class="fa fa-spin fa-spinner"></i> Setting up shared content, please wait...</p>
+  </div>
+</div>
+
+<div class="modal hide fade" id="dataPackageFormModal">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Save features in a new Data Package</h3>
+	</div>
+	<form class="form-horizontal">
+		<div class="modal-body">
+			<div class="control-group">
+				<label class="control-label" for="inputName">Name</label>
+				<div class="controls">
+					<input type="text" id="inputName" name="Name" placeholder="Name">
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<span class="text-error"></span> &nbsp;&nbsp;
+			<button type="submit" data-dismiss="modal" aria-hidden="true" class="btn">Save</button>
+			<a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</a>
+		</div>
+	</form>
+</div>
+
+<div class="modal hide fade" id="permissionsModal">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Share with others</h3>
+	</div>
+	<form class="form-horizontal">
+		<div class="modal-body"></div>
+		<div class="modal-footer">
+			<span class="text-error"></span> &nbsp;&nbsp;
+			<a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
+			<a href="#" class="btn save">Save</a>
+		</div>
+	</form>
+</div>
+
+<div class="modal hide fade" id="storeUploadModal">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Store upload</h3>
+	</div>
+	<div class="modal-body">
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+	window.Config = {
+		 testTimeseries: true,
+		 mapboxAccessToken: 'pk.eyJ1IjoibWFwYm94LWhlcCIsImEiOiJjajRzaWg5YzUzMGUwMzNtanpyZm5tN3ZsIn0.-cbJ7zNKCELivFC2NlPNog',
+	};
+</script>
+<script src="https://maps.google.com/maps/api/js?v=3.2&sensor=false" type="text/javascript"></script>
+<script data-main="/scripts/geobrowser/main" src="/scripts/libs/require/require.js" type="text/javascript"></script>
+</body>
+</html>

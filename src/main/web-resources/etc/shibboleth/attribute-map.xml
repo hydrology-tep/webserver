@@ -1,0 +1,9 @@
+<Attributes xmlns="urn:mace:shibboleth:2.0:attribute-map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <Attribute name="urn:mace:dir:attribute-def:cn" id="Umsso-Person-commonName" />
+
+    <Attribute name="urn:mace:dir:attribute-def:spideceo" id="SP-Person-Identifier" />
+
+    <Attribute name="urn:mace:dir:attribute-def:mail" id="Umsso-Person-Email" />
+
+</Attributes>

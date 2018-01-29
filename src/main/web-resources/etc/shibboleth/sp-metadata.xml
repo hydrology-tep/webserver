@@ -1,0 +1,69 @@
+<EntityDescriptor entityID="https://hydrology-tep.eo.esa.int/shibboleth" validUntil="2030-01-01T00:00:00Z"
+                  xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                  xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+    <KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIGXDCCBUSgAwIBAgIRALnObnnT5aOHyAYOiTf0j+UwDQYJKoZIhvcNAQELBQAw
+gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO
+BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD
+VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT
+ZXJ2ZXIgQ0EwHhcNMTUxMDEwMDAwMDAwWhcNMTcxMDA5MjM1OTU5WjCCATYxCzAJ
+BgNVBAYTAklUMQ4wDAYDVQQREwUwMDA0NDENMAsGA1UECBMEUm9tYTERMA8GA1UE
+BxMIRnJhc2NhdGkxGzAZBgNVBAkTEkNhc2VsbGEgUG9zdGFsZSA2NDEcMBoGA1UE
+CRMTVmlhIEdhbGlsZW8gR2FsaWxlaTE9MDsGA1UEChM0RVNBLUVTUklOIChFdXJv
+cGVhbiBTcGFjZSBBZ2VuY3kgUmVzZWFyY2ggSW5zdGl0dXRlKTEbMBkGA1UECxMS
+SG9zdGVkIGJ5IFRlcnJhZHVlMSgwJgYDVQQLEx9Ib3N0ZWQgYnkgRXVyb3BlYW4g
+U3BhY2UgQWdlbmN5MREwDwYDVQQLEwhFbGl0ZVNTTDEhMB8GA1UEAxMYaHlkcm9s
+b2d5LXRlcC5lby5lc2EuaW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEA1B/i1s4cSeakW60aj5D4oWeqBF8jI7xSzqN+E8GFj5JBoJvIs63dNUUdR1Pq
+Q8tNgFI8SMXeqEJ7QQVW/pym0gyFqHpnPcADqXe/VD5fsIXrtLDMizTJ5jHGkvMi
+t66XbUJNdqS9OHLx6iQQU4mbAiMCmnHXHhQaypcO1cwgBtQaJZXgFfJzmIHhUeF+
+8k1L7obGSRwboMS/UmhZbkHYC3hJTXs7udZ1BahORpCZcs/R5wzF2d2hGXthWzVb
+sFfMv78rKA5zXJ6aGdB/+KnZ/QvAr6dHyUpjrZDF66eLnAR9I7l75ecNbMXkUWTd
+4SJf9X0UcHg115pRlZzUQYuHTwIDAQABo4ICADCCAfwwHwYDVR0jBBgwFoAUmvMr
+2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFHpDlhE/IU2COYOX7w+Gf6WQ495r
+MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF
+BwMBBggrBgEFBQcDAjBQBgNVHSAESTBHMDsGDCsGAQQBsjEBAgEDBDArMCkGCCsG
+AQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8uY29tL0NQUzAIBgZngQwBAgIw
+WgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9jYS5jb20vQ09NT0RP
+UlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNybDCBiwYI
+KwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0LmNvbW9kb2NhLmNv
+bS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0Eu
+Y3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wQQYDVR0R
+BDowOIIYaHlkcm9sb2d5LXRlcC5lby5lc2EuaW50ghx3d3cuaHlkcm9sb2d5LXRl
+cC5lby5lc2EuaW50MA0GCSqGSIb3DQEBCwUAA4IBAQBDGAPU/K0wtFI9AJSlaQSJ
+gH1VfyBc3NUWb7S+mCNSKRjOYz+jAew7W+6mmkuVsqbU8UqFC7MqW3FCflsABRO1
+VWf9/OW0VOgLQMY75BK7FOPiYGnSXZNeCQW28+2fyjsLr9v4JpNoMYJ3fdQV7Xpm
+6GSU2MsAHopWv5BFsM7pI+VaG7F+cNELdRlzB20MH3tiovw0zbzLylfos7r18D+M
+ANFyqii92hwQ9ks+k9lwVPWyofhhc6JUL9aUBP0pi1iZ0LkTPhpSquQEu3kPn2TH
+2TNqcqajBVWBdho+fvQyDf6hmnVAXdRWFcmSm2h8JSalQsiXxWC/SKdtxMdEoYxe          
+	  </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+
+    <AssertionConsumerService Location="https://hydrology-tep.eo.esa.int/Shibboleth.sso/SAML2/Artifact" index="1" isDefault="true" 
+      Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"/>
+
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://hydrology-tep.eo.esa.int/Shibboleth.sso/SLO/Redirect"/>
+
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+  </SPSSODescriptor>
+
+  <Organization>
+    <OrganizationName xml:lang="en">hydrology-tep</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">hydrology Tep Portal</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">https://hydrology-tep.eo.esa.int</OrganizationURL>
+  </Organization>
+
+</EntityDescriptor>
+

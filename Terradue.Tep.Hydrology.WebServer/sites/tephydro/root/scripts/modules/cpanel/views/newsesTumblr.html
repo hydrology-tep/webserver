@@ -1,0 +1,68 @@
+<div class="newses-tumblr container">
+	<h2>Tumblr News Hubs</h2>
+	<div class="row-fluid">
+		<div class="span8">
+			<table class="table table-condensed table-striped table-hover">
+				<thead>
+					<th>Title</th>
+					<th>Name</th>
+					<th>Abstract</th>
+					<th>Date</th>
+					<th>Author</th>
+					<th>Url</th>
+				</thead>
+				<tbody>
+					{{#each list}}
+						<tr>
+							<td>{{ Title }}</td>
+							<td>{{ Name }}</td>
+							<td>{{{ Abstract }}}</td>
+							<td>{{#if Date}}{{ simpleDate Date }}{{/Date}}</td>
+							<td>{{ Author }}</td>
+							<td>{{ Url }}</td>
+							<td class="updateDeleteCell" {{ (el) -> el.data( 'news', scope._context ) }}>
+								<button class="btn btn-small update"><i class="fa fa-pencil"></i></button>
+								<button class="btn btn-small delete" can-click="destroy"><i class="fa fa-trash-o"></i></button>
+							</td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+			{{#if details._isVisible }}
+				{{#if details.Id }}
+					<button class="btn btn-small create">Create</button>
+				{{/if}}
+			{{else}}
+				<button class="btn btn-small create">Create</button>
+			{{/if}}
+		</div>
+		<div class="span4">
+			{{#if details._isVisible}}
+				<form class="news-tumblr-form">
+					<label>Title</label>
+					<input name="Title" type="text" placeholder="Title" value="{{ details.Title }}">
+					
+					<label>Name</label>
+					<input name="Name" type="text" placeholder="Name" value="{{ details.Name }}">
+					
+					<label>Abstract</label>
+					<input name="Abstract" type="text" placeholder="Abstract" value="{{ details.Abstract }}">
+					
+					<label>Author</label>
+					<input name="Author" type="text" placeholder="Author" value="{{ details.Author }}">
+					
+					<label>Url</label>
+					<input name="Url" type="text" placeholder="Url" value="{{ details.Url }}">
+					<br/>
+					
+					{{#if details.Id }}
+						<button type="submit" class="btn btn-small formUpdate">Update</button>
+					{{else}}
+						<button type="submit" class="btn btn-small formCreate">Create</button>
+					{{/if}}
+					<button type="button" class="btn btn-small formCancel">Cancel</button>
+				</form>
+			{{/if}}
+		</div>
+	</div>
+</div>

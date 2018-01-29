@@ -1,0 +1,38 @@
+<div class="featureDescriptor charterActivation">
+{{#feature.properties}}
+	<h1 class="osn-popup-title textOverflow">{{ title }}</h1>
+
+	<div class="icon">
+		<img src="/geobrowser/styles/img/markerIcons/{{ type }}1.png"/>
+		<div>{{ type }}</div>
+	</div>
+	
+	<p class="date lead"><i class="fa fa-clock-o"></i> {{ formatedDate }}</p>
+	<p class="link textOverflow"><a href="{{ link }}" target="_blank"><i class="fa fa-external-link"></i> {{ link }}</a></p>
+	
+	<p>{{{ teaser }}}</p>
+	
+	<br/>
+	<div class="btn-group filterButtons">
+	
+		<a class="btn btn-mini btn-info" href="{{ link }}" target="_blank">
+			<i class="fa fa-download"></i> Go to link
+		</a>
+		
+		{{#if activationDate}}
+			<button class="btn btn-mini timeFilterBtn" data-toggle="tooltip" title="Search filtering by the feature event date"><i class="fa fa-clock-o"></i> Time filter</button>
+		{{else}}
+			<button class="btn btn-mini disabled"><i class="fa fa-clock-o"></i> Time filter</button>
+		{{/if}}
+		
+		<button class="btn btn-mini spatialFilterBtn" data-toggle="tooltip" title="Search filtering by the feature spatial info"><i class="fa fa-globe"></i> Spatial filter</button>
+
+		{{#if activationDate}}
+			<button class="btn btn-mini timeSpatialFilterBtn" data-toggle="tooltip" title="Apply both time and spatial filters"><i class="fa fa-clock-o"></i> <i class="fa fa-globe"></i> Both filters</button>
+		{{else}}
+			<button class="btn btn-mini disabled"><i class="fa fa-clock-o"></i> <i class="fa fa-globe"></i> Both filters</button>
+		{{/if}}
+	</div>
+
+{{/feature.properties}}
+</div>

@@ -1,0 +1,56 @@
+<services>
+	<map>
+		<!-- these are the default elements of the const type="map" service widget -->
+		<wmsLayers>[new OpenLayers.Layer.WMS( "Base Map","http://gpod-map.eo.esa.int/cgi-bin/mapserv?map=base.map&amp;",
+		    {layers: "NE2_HR_LC_SR_W_DR,Borders", "STYLES" : "", format: 'image/png', 'buffer':4})  ]</wmsLayers>
+		<mapOptions>{numZoomLevels: 6, maxResolution: 'auto', units: "dd", controls: [] }</mapOptions>
+		<AOI/>
+		<mapControls>
+			<element type="geo:box"/>
+			<!--<element type="geo:polygon"/>-->
+		</mapControls>
+	</map>
+	<dataset>
+		<operations>
+			<element type="button_selectall" caption="Select All" />
+			<element type="button_delete" caption="Delete" />
+		</operations>
+		<count>50</count>
+
+		<!-- this defines the default url type of the catalogue --> 
+		<template>application/rdf+xml</template>
+
+		<!-- 
+			the catalogue element defines the necessary information for the catalogue and how to retrieve it form 
+			from each result type 
+			this must be repeated for each diferent type 	
+		--> 
+		<catalogue type="application/rdf+xml">
+			<element name="dataset">//dclite4g:DataSet</element>
+			<element name="value">@rdf:about</element>
+			<element name="caption">dc:identifier</element>
+			<element name="spatial">dct:spatial</element>
+			<element name="series">//dclite4g:Series[@rdf:about=$datasetseries]</element>
+			<element name="datasetseries">dclite4g:series/@rdf:resource</element>
+			<element name="relation">dc:relation/@rdf:resource</element>
+			<element name="duration">rdf:RDF/rdf:Description/dc:SizeOrDuration</element>
+			<element name="itemsPerPage">rdf:RDF/rdf:Description/os:itemsPerPage</element>
+			<element name="totalResults">rdf:RDF/rdf:Description/os:totalResults</element>
+			<element name="startIndex">rdf:RDF/rdf:Description/os:startIndex</element>
+			<element name="nextPage">rdf:RDF/rdf:Description/atom:link[@atom:rel='next']/@atom:href</element>
+			<element name="prevPage">rdf:RDF/rdf:Description/atom:link[@atom:rel='previous']/@atom:href</element>
+			<element name="_identifier" submit="true">dc:identifier</element>
+			<element name="_resource" submit="true">@rdf:about</element>
+			<element name="_size" submit="true">eop:size</element>
+		</catalogue>
+ 		<!-- this element is for the default metadata used in the series/catalogue page  -->
+		<metadata>
+			<element value="dc:identifier">File Name</element>
+			<element value="ical:dtstart" name="dtstart">Start Time</element>
+			<element value="ical:dtend" name="dtend">End Time</element>
+			<element value="eop:orbitNumber">Orbit</element>
+			<element value="eop:size">Size </element>
+			<element value="dclite4g:onlineResource/*/@rdf:about" hidden="true">Files</element>
+		</metadata>
+	</dataset>
+</services>

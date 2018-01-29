@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Discovery feed for WPS result local data</title>
+  <id>urn:uuid:607ba1aa-7f43-4b85-9d75-adab715dc9c5</id>
+  <updated>2014-12-11T20:20:21.820292Z</updated>
+  <link rel="alternate" href="http://vm-10-10-31-32.dev.terradue.int/?format=atom"/>
+  <link rel="search" type="application/opensearchdescription+xml" title="OpenSearch Description link" href="http://vm-10-10-31-32.dev.terradue.int/sbws/wps/adore_wf/manu/results/description"/>
+  <link rel="self" type="application/atom+xml" title="Reference link" href="http://vm-10-10-31-32.dev.terradue.int/sbws/wps/adore_wf/manu/results/search?format=atom"/>
+  <subtitle type="text">This OpenSearch Service allows the discovery of the different items which are part of the localdata collectionThis search service is in accordance with the OGC 10-032r3 specification.</subtitle>
+  <generator>Terradue Web Server</generator>
+  <entry>
+    <id>https://data2.terradue.com:443/eop/scihub/dataset/search?format=atom&amp;uid=S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0</id>
+    <title type="text">S1A GRD IW_DP L1 VV, VH 16 150814T064421-150814T064448</title>
+    <summary type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Identifier&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Product Type&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;GRD&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Swath&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;IW&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Orbit&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;7263 ASCENDING&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Track&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Start&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;2015-08-14T18:44:21.1412900Z&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;End&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;2015-08-14T18:44:48.9093800Z&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</summary>
+    <published>2015-08-14T22:04:37.091Z</published>
+    <updated>2016-04-27T16:14:21.29831Z</updated>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/$value" length="1101165998" rel="enclosure" title="Sentinels Scientific data hub zip file" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('s1a-iw-grd-vh-20150814t184421-20150814t184448-007263-009f2c-002.xml')/$value" length="1744013" rel="enclosure" title="products1aiwgrdvh20150814t18442120150814t184448007263009f2c002" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('calibration')/Nodes('noise-s1a-iw-grd-vh-20150814t184421-20150814t184448-007263-009f2c-002.xml')/$value" length="357624" rel="enclosure" title="noises1aiwgrdvh20150814t18442120150814t184448007263009f2c002" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('calibration')/Nodes('calibration-s1a-iw-grd-vh-20150814t184421-20150814t184448-007263-009f2c-002.xml')/$value" length="1099679" rel="enclosure" title="calibrations1aiwgrdvh20150814t18442120150814t184448007263009f2c002" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('s1a-iw-grd-vv-20150814t184421-20150814t184448-007263-009f2c-001.xml')/$value" length="1744048" rel="enclosure" title="products1aiwgrdvv20150814t18442120150814t184448007263009f2c001" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('calibration')/Nodes('noise-s1a-iw-grd-vv-20150814t184421-20150814t184448-007263-009f2c-001.xml')/$value" length="357624" rel="enclosure" title="noises1aiwgrdvv20150814t18442120150814t184448007263009f2c001" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('annotation')/Nodes('calibration')/Nodes('calibration-s1a-iw-grd-vv-20150814t184421-20150814t184448-007263-009f2c-001.xml')/$value" length="1099679" rel="enclosure" title="calibrations1aiwgrdvv20150814t18442120150814t184448007263009f2c001" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('preview')/Nodes('map-overlay.kml')/$value" length="1018" rel="enclosure" title="mapoverlay" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('preview')/Nodes('product-preview.html')/$value" length="3196" rel="enclosure" title="productpreview" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('measurement')/Nodes('s1a-iw-grd-vh-20150814t184421-20150814t184448-007263-009f2c-002.tiff')/$value" length="940819260" rel="enclosure" title="s1aiwgrdvh20150814t18442120150814t184448007263009f2c002" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('measurement')/Nodes('s1a-iw-grd-vv-20150814t184421-20150814t184448-007263-009f2c-001.tiff')/$value" length="940819260" rel="enclosure" title="s1aiwgrdvv20150814t18442120150814t184448007263009f2c001" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/Nodes('S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0.SAFE')/Nodes('preview')/Nodes('quick-look.png')/$value" length="286725" rel="enclosure" title="quicklook" type="application/octet-stream"/>
+    <link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6ab40805-0aa3-442c-9615-60fbfd571681')/$value" length="1101165998" rel="enclosure" type="application/octet-stream"/>
+    <link href="https://data2.terradue.com/eop/scihub/dataset/search?format=atom&amp;uid=S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0" rel="self" title="Reference link" type="application/atom+xml"/>
+    <link href="https://data2.terradue.com//eop/scihub/profile/xml?uid=S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0" rel="alternate" title="EOP profile" type="application/xml"/>
+    <link href="https://data2.terradue.com/eop/scihub/dataset/description" rel="search" title="OpenSearch Description link" type="application/opensearchdescription+xml"/>
+    <offering code="http://www.opengis.net/spec/owc-atom/1.0/req/wms" xmlns="http://www.opengis.net/owc/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <operation code="GetMap" href="https://data.terradue.com/geoserver/altamira/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=altamira:S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0&amp;styles=&amp;bbox=-8.094106223330728,12.476365890236522,-7.603944890295804,12.904751248992417&amp;width=768&amp;height=671&amp;srs=EPSG:4326&amp;format=image%2Fpng&amp;transparent=true" method="GET" type="image/png"/>
+    </offering>
+    <box xmlns="http://www.georss.org/georss">11.747769 -9.494657 13.6991 -6.91465</box>
+    <where xmlns="http://www.georss.org/georss">
+      <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <surfaceMembers>
+          <Polygon>
+            <exterior>
+              <LinearRing>
+                <posList count="5" srsDimension="2">13.753352 -9.597721 14.191487 -7.310555 12.516709 -6.979505 12.074441 -9.250356 13.753352 -9.597721</posList>
+              </LinearRing>
+            </exterior>
+          </Polygon>
+        </surfaceMembers>
+      </MultiSurface>
+    </where>
+    <date xmlns="http://purl.org/dc/elements/1.1/">2015-08-14T18:44:21.1412900Z/2015-08-14T18:44:48.9093800Z</date>
+    <spatial xmlns="http://purl.org/dc/terms/">MULTIPOLYGON(((-9.597721 13.753352,-7.310555 14.191487,-6.979505 12.516709,-9.250356 12.074441,-9.597721 13.753352)))</spatial>
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">S1A_IW_GRDH_1SDV_20150814T184421_20150814T184448_007263_009F2C_33D0</identifier>
+  </entry>
+  <entry>
+    <id>https://data2.terradue.com:443/eop/scihub/dataset/search?format=atom&amp;uid=S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167</id>
+    <title type="text">S1A GRD IW_DP L1 VV, VH 16 2016-02-22T18:44:14.4123080Z/2016-02-22T18:44:39.4115210Z</title>
+    <summary type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Identifier&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Product Type&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;GRD&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Swath&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;IW&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Orbit&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;10063 ASCENDING&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Track&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Start&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;2016-02-22T18:44:14.4123080Z&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;End&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;2016-02-22T18:44:39.4115210Z&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</summary>
+    <published>2016-02-23T09:08:04.694Z</published>
+    <updated>2016-04-27T16:09:14.882542Z</updated>
+    <link href="https://scihub.copernicus.eu/apihub/odata/v1/Products('74dd46f1-b2c7-4a93-89cf-a2d68c65a6ae')/$value" length="986261976" rel="enclosure" type="application/octet-stream"/>
+    <link href="https://data2.terradue.com/eop/scihub/dataset/search?format=atom&amp;uid=S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167" rel="self" title="Reference link" type="application/atom+xml"/>
+    <link href="https://data2.terradue.com//eop/scihub/profile/xml?uid=S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167" rel="alternate" title="EOP profile" type="application/xml"/>
+    <link href="https://data2.terradue.com/eop/scihub/dataset/description" rel="search" title="OpenSearch Description link" type="application/opensearchdescription+xml"/>
+    <offering code="http://www.opengis.net/spec/owc-atom/1.0/req/wms" xmlns="http://www.opengis.net/owc/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <operation code="GetMap" href="https://data.terradue.com/geoserver/altamira/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=altamira:S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167&amp;styles=&amp;bbox=-8.094106223330728,12.476365890236522,-7.603944890295804,12.904751248992417&amp;width=768&amp;height=671&amp;srs=EPSG:4326&amp;format=image%2Fpng&amp;transparent=true" method="GET" type="image/png"/>
+    </offering>
+    <box xmlns="http://www.georss.org/georss">11.747769 -9.494657 13.6991 -6.91465</box>
+    <where xmlns="http://www.georss.org/georss">
+      <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <surfaceMembers>
+          <Polygon>
+            <exterior>
+              <LinearRing>
+                <posList count="5" srsDimension="2">13.259611 -9.494657 13.6991 -7.21164 12.191022 -6.91465 11.747769 -9.183458 13.259611 -9.494657</posList>
+              </LinearRing>
+            </exterior>
+          </Polygon>
+        </surfaceMembers>
+      </MultiSurface>
+    </where>
+    <date xmlns="http://purl.org/dc/elements/1.1/">2016-02-22T18:44:14.4123080Z/2016-02-22T18:44:39.4115210Z</date>
+    <spatial xmlns="http://purl.org/dc/terms/">MULTIPOLYGON(((-9.494657 13.259611,-7.21164 13.6991,-6.91465 12.191022,-9.183458 11.747769,-9.494657 13.259611)))</spatial>
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">S1A_IW_GRDH_1SDV_20160222T184414_20160222T184439_010063_00ED15_D167</identifier>
+  </entry>
+  <entry>
+    <id>1</id>
+    <title type="text">Water Mask Dry Season 20160222</title>
+    <published>2016-04-27</published>
+    <updated>2016-04-27</updated>
+    <summary type="text/html"><![CDATA[
+            <table>
+              <tbody>
+                <tr valign="top">
+                  <td>
+                    <strong>Place</strong></td>
+                  <td>Bamako</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Author</b></td>
+                  <td>
+                    Altamira
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Platform</strong></td>
+                  <td>Sentinel-1A</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Instrument</b></td>
+                  <td>SAR-C SAR</td>
+                </tr>
+              </tbody>
+            </table>
+  ]]>
+    </summary>
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">Water_Mask_Dry_Season_20160222</identifier>
+    <box xmlns="http://www.georss.org/georss">12.476365890236522 -8.052562551707721 12.80871523758408 -7.62759420463128</box>
+    <offering xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/owc/1.0" code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
+      <operation code="GetMap" method="GET" href="https://data.terradue.com/geoserver/altamira/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=altamira:WaterMask_20Dry_20Season_2020160222&amp;styles=&amp;bbox=-73.85694885253906,-41.1297238519619,-70.19744390598498,-38.915802001953125&amp;width=545&amp;height=330&amp;srs=EPSG:4326&amp;transparent=true&amp;format=image/png" type="image/png"/>
+    </offering>
+    <date xmlns="http://purl.org/dc/elements/1.1/">2016-02-22</date>
+    <where xmlns="http://www.georss.org/georss">
+      <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <surfaceMembers>
+          <Polygon>
+            <exterior>
+              <LinearRing>
+                <posList count="5" srsDimension="2">12.476365890236522 -8.052562551707721 12.80871523758408 -8.052562551707721 12.80871523758408 -7.62759420463128 12.476365890236522 -7.62759420463128 12.476365890236522 -8.052562551707721</posList>
+              </LinearRing>
+            </exterior>
+          </Polygon>
+        </surfaceMembers>
+      </MultiSurface>
+    </where>
+  </entry>
+  <entry>
+    <id>1</id>
+    <title type="text">Water Mask Wet Season 20150814</title>
+    <published>2016-04-27</published>
+    <updated>2016-04-27</updated>
+    <summary type="text/html"><![CDATA[
+            <table>
+              <tbody>
+                <tr valign="top">
+                  <td>
+                    <strong>Place</strong></td>
+                  <td>Bamako</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Author</b></td>
+                  <td>
+                    Altamira
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Platform</strong></td>
+                  <td>Sentinel-1A</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Instrument</b></td>
+                  <td>SAR-C SAR</td>
+                </tr>
+              </tbody>
+            </table>
+  ]]>
+    </summary>
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">Water_Mask_Wet_Season_20150814</identifier>
+    <box xmlns="http://www.georss.org/georss">12.476365890236522 -8.052562551707721 12.80871523758408 -7.62759420463128</box>
+    <offering xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/owc/1.0" code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
+      <operation code="GetMap" method="GET" href="https://data.terradue.com/geoserver/altamira/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=altamira:WaterMask_20Wet_20Season_2020150814&amp;styles=&amp;bbox=-73.85694885253906,-41.1297238519619,-70.19744390598498,-38.915802001953125&amp;width=545&amp;height=330&amp;srs=EPSG:4326&amp;transparent=true&amp;format=image/png" type="image/png"/>
+    </offering>
+    <date xmlns="http://purl.org/dc/elements/1.1/">2015-08-14</date>
+    <where xmlns="http://www.georss.org/georss">
+      <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <surfaceMembers>
+          <Polygon>
+            <exterior>
+              <LinearRing>
+                <posList count="5" srsDimension="2">12.476365890236522 -8.052562551707721 12.80871523758408 -8.052562551707721 12.80871523758408 -7.62759420463128 12.476365890236522 -7.62759420463128 12.476365890236522 -8.052562551707721</posList>
+              </LinearRing>
+            </exterior>
+          </Polygon>
+        </surfaceMembers>
+      </MultiSurface>
+    </where>
+  </entry>
+  <entry>
+    <id>1</id>
+    <title type="text">Flood Map 20150814</title>
+    <published>2016-04-27</published>
+    <updated>2016-04-27</updated>
+    <summary type="text/html"><![CDATA[
+            <table>
+              <tbody>
+                <tr valign="top">
+                  <td>
+                    <strong>Place</strong></td>
+                  <td>Bamako</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Author</b></td>
+                  <td>
+                    Altamira
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Platform</strong></td>
+                  <td>Sentinel-1A</td>
+                </tr>
+                <tr valign="top">
+                  <td>
+                    <b>Instrument</b></td>
+                  <td>SAR-C SAR</td>
+                </tr>
+              </tbody>
+            </table>
+  ]]>
+    </summary>
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">Flood_Map_20150814</identifier>
+    <box xmlns="http://www.georss.org/georss">12.476365890236522 -8.052562551707721 12.80871523758408 -7.62759420463128</box>
+    <offering xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opengis.net/owc/1.0" code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
+      <operation code="GetMap" method="GET" href="https://data.terradue.com/geoserver/altamira/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=altamira:FloodMap&amp;styles=&amp;bbox=-73.85694885253906,-41.1297238519619,-70.19744390598498,-38.915802001953125&amp;width=545&amp;height=330&amp;srs=EPSG:4326&amp;transparent=true&amp;format=image/png" type="image/png"/>
+    </offering>
+    <date xmlns="http://purl.org/dc/elements/1.1/">2015-08-14</date>
+    <where xmlns="http://www.georss.org/georss">
+      <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <surfaceMembers>
+          <Polygon>
+            <exterior>
+              <LinearRing>
+                <posList count="5" srsDimension="2">12.476365890236522 -8.052562551707721 12.80871523758408 -8.052562551707721 12.80871523758408 -7.62759420463128 12.476365890236522 -7.62759420463128 12.476365890236522 -8.052562551707721</posList>
+              </LinearRing>
+            </exterior>
+          </Polygon>
+        </surfaceMembers>
+      </MultiSurface>
+    </where>
+  </entry>
+  <identifier xmlns="http://purl.org/dc/elements/1.1/">localdata</identifier>
+  <queryTime xmlns="http://a9.com/-/spec/opensearch/1.1/">0.1078</queryTime>
+  <startIndex xmlns="http://a9.com/-/spec/opensearch/1.1/">1</startIndex>
+  <itemsPerPage xmlns="http://a9.com/-/spec/opensearch/1.1/">20</itemsPerPage>
+  <Query xmlns="http://a9.com/-/spec/opensearch/1.1/" format="atom"/>
+</feed>

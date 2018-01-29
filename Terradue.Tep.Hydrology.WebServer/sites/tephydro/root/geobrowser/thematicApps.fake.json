@@ -1,0 +1,199 @@
+{
+    "properties": {
+        "box": "90 -180 -90 180",
+        "categories": [
+            {
+                "@label": "Thematic Application",
+                "@scheme": "http://www.terradue.com/feed",
+                "@term": "thematicapplication"
+            }
+        ],
+        "links": [
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?q=global&format=atom",
+                "@rel": "self",
+                "@title": "Reference link",
+                "@type": "application/atom+xml"
+            },
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+		"published": "2016-10-16T16:24:55Z",
+        "publisher": "Terradue",
+        "title": "hydrology thematic applications search results",
+        "totalResults": "4",
+        "updated": "2016-03-08T10:26:04Z"
+    },
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=wois&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "hydrology-tep@esa.int",
+                        "name": "HEP Content Authority",
+                        "uri": "https://hydrology-tep.eo.esa.int/t2api/users/hydrology-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "wois",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=wois&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },{
+                    	"@href": "/geobrowser/thematicApps/img/wois.png",
+                    	"@rel": "icon",
+                    	"@title": "icon",
+                    	"@type": "image/png"
+                    }
+                ],
+                "published": "2016-10-07T16:24:55Z",
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "The open-source Water Observation and Information System (WOIS) aims to enable African water authorities the production and application of a range of satellite earth observation based information products needed for Integrated Water Resource Management (IWRM) in Africa.",
+                "title": "WOIS",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        },
+        {
+            "id": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=fm&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "hydrology-tep@esa.int",
+                        "name": "HEP Content Authority",
+                        "uri": "https://hydrology-tep.eo.esa.int/t2api/users/hydrology-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "fm",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=fm&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },{
+                    	"@href": "/geobrowser/thematicApps/img/fm.png",
+                    	"@rel": "icon",
+                    	"@title": "icon",
+                    	"@type": "image/png"
+                    }
+                ],
+                "published": "2016-10-05T16:24:55Z",
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "Historical analysis of large floods events at medium resolution using ASAR archive data and archive MODIS data for results refinement. Also flood monitoring and detailed mapping of affected areas at high resolution using Sentinel-1, and high resolution optical imagery for results refinement.",
+                "title": "Flood Monitoring",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        },
+        {
+            "id": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=hm&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "hydrology-tep@esa.int",
+                        "name": "HEP Content Authority",
+                        "uri": "https://hydrology-tep.eo.esa.int/t2api/users/hydrology-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "hm",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=hm&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },{
+                    	"@href": "/geobrowser/thematicApps/img/hm.png",
+                    	"@rel": "icon",
+                    	"@title": "icon",
+                    	"@type": "image/png"
+                    }
+                ],
+                "published": "2016-10-05T16:24:55Z",
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "Hydrological modelling service providing data on river discharge, lake outflow, water level in lakes and rivers, as well as land surface water balance components (precipitation, evapotranspiration, soil moisture) within the area covered by the model domain. Assimilation of earth observation data from the other TEP Hydrology processing services is a core feature of the service. The service will provide data from  simulation of historical periods, short-term and seasonal forecast, as well as climate change scenarios.",
+                "title": "Hydrological Modelling",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        },
+        {
+            "id": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=wq&format=atom",
+            "properties": {
+                "authors": [
+                    {
+                        "email": "hydrology-tep@esa.int",
+                        "name": "HEP Content Authority",
+                        "uri": "https://hydrology-tep.eo.esa.int/t2api/users/hydrology-tep"
+                    }
+                ],
+                "box": "90 -180 -90 180",
+                "date": "2009-01-23T09:08:56.000Z/2016-01-23T09:14:08.000Z",
+                "identifier": "wq",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/search?uid=wq&format=atom",
+                        "@rel": "self",
+                        "@title": "Reference link",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/apps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },{
+                    	"@href": "/geobrowser/thematicApps/img/wq.png",
+                    	"@rel": "icon",
+                    	"@title": "icon",
+                    	"@type": "image/png"
+                    }
+                ],
+                "published": "2016-10-02T16:24:55Z",
+                "publisher": "Terradue",
+                "rights": "Fee:NONE / Contraints:NONE",
+                "summary": "Water Quality parameters Chlorophyll, Total Suspended Solids and Colored Dissolved Organic Matter based on Organic Absorption will be provided by EOMAPs proprietary water quality processor Modular Inversion and Processing System (MIP). The processors include sensor independent state-of-the-art algorithms including adjacency correction, coupled atmospheric-in-water retrieval considering all bi-directional aspects from extreme clean to extreme turbid case 2 waters in a physically correct approach.",
+                "title": "Water Quality",
+                "updated": "2016-03-07T18:11:19Z"
+            },
+            "type": "Feature"
+        }
+        
+    ]
+}

@@ -1,0 +1,21 @@
+
+.leaflet-control-layers-overlays label .opacityButtonContainer {
+	margin-left: 5px;
+	display: inline-block;
+	width: 20px;
+}
+
+
+.leaflet-control-layers-overlays label .opacityButton {
+	display: none;
+}
+
+.leaflet-control-layers-overlays label:hover .opacityButton {
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.leaflet-control-layers-overlays .opacitySlider {
+	margin: 5px 10px 10px 20px;
+}
+

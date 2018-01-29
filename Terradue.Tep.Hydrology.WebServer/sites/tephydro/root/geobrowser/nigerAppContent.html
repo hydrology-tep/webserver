@@ -1,0 +1,55 @@
+<link href="/scripts/geobrowserPlugins/nigerRiverBasin/css/nigerRiverBasin.css" type="text/css" rel="stylesheet" />
+
+	<div class="pane ui-layout-north" id="topBar">
+		<a class="logo" href="/"><img src="/styles/img/logo-hydro.png"></a>
+		<div id="contextsMenu"></div>
+		<div id="loginDiv"></div>
+		<div id="advancedToolsDiv"></div>
+	</div>
+	<div class="pane ui-layout-center">
+		<div class="pane ui-layout-center" id="geobrowserMap"></div>
+		<div class="pane ui-layout-south">
+			<div class="row-fluid">
+				<div class="span6" style="position:relative" id="tabMainOpensearchSpan">
+					<ul class="nav nav-tabs miniTabs" id="tabMainOpensearch">
+						<li class="active"><a href="#" data-toggle="tab" class="tabPaneMainOpensearchResult">Current search result</a></li>
+						<a href="javascript://" class="text-warning searchWarning" style="display: none"><i class="fa fa-exclamation-triangle"></i></a>
+					</ul>
+					<div id="osResultsTable" class="miniTabsPane">
+						<p class="text-info"><small>You have no features selected.</small></p>
+					</div>
+					<div id="addFeaturesButtons">
+						<div class="addAllFeatures" data-title="Add all features to the basket"><i class="fa fa-arrow-circle-right"></i></i></div>
+						<div class="addSelectedFeatures" data-title="Add selected features to the basket"><i class="fa fa-arrow-circle-o-right"></i></div>
+					</div>
+					<div id="osMainOpensearchInfo" class="miniTabsPane">
+						<p class="text-info"><small>Current search info...</small></p>
+					</div>
+				</div>
+				<div class="span6" style="position:relative" id="tabPaneFeaturesBasketTab">
+					<ul class="nav nav-tabs miniTabs" id="tabDPFB">
+						<li class="active"><a href="#" data-toggle="tab" class="tabPaneFeaturesBasket">Features Basket</a></li>
+						<li><a href="#" data-toggle="tab" class="tabPaneDataPackages">Data Packages</a></li>
+					</ul>
+					<div id="featuresBasket" class="miniTabsPane">
+						<div id="basketOpensearchTable"></div>
+						<div class="dropMessage">
+							<p>Drop here<small>To add features to the basket</small></p>
+						</div>
+					</div>
+					<div id="dataPackagesPanel" class="miniTabsPane"></div>
+					
+				</div>						
+			</div>
+		</div>	
+	</div>
+	<div class="pane ui-layout-west" id="searchPanel">
+		<div class="searchPanelHeader">
+			<div>
+				<i class="fa fa-search"></i> Search Panel
+				<a href="#" class="btn btn-mini pinButton"><i class="fa fa-map-pin"></i></a>
+			</div>
+		</div>
+		<div class="searchPanelContent"></div>
+	</div>
+	<div class="pane ui-layout-east" id="wpsPanel"></div>

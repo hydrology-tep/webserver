@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESA Hydrology TEP</title>
+
+<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
+
+<!-- import css -->
+<link href="scripts/libs/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/bootstrap/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/font-awesome-4.5.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/jquery.loadmask/jquery.loadmask.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/bootstrap-fileupload/bootstrap-fileupload.min.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/jqrange/css/iThing-min.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/bootstro/bootstro.css" type="text/css" rel="stylesheet" />
+
+<link href="scripts/libs/messenger/css/messenger.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/messenger/css/messenger-spinner.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/messenger/css/messenger-theme-flat.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/jquery.droppableTextarea/css/jquery.droppableTextarea.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/jquery.dataTables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet"/>
+<link href="scripts/libs/jquery.copyableInput/css/jquery.copyableInput.css" type="text/css" rel="stylesheet" />
+<link href="scripts/libs/select2/css/select2.min.css" type="text/css" rel="stylesheet" />
+
+<!-- page css -->
+<link href="styles/css/app.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/carousel.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/index.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/logos.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/users.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/partners.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/initiative.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/community.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/about.css" type="text/css" rel="stylesheet" />
+<link href="styles/css/quickstart.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/social/css/social.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/activity/css/activity.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/blog/css/blog.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/settings/css/settings.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/cpanel/css/cpanel.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/user/css/user.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/thematic/css/thematic.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/apps/css/apps.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/communities/css/communities.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/analytics/css/analytics.css" type="text/css" rel="stylesheet" />
+<link href="scripts/modules/accounting/css/accounting.css" type="text/css" rel="stylesheet" />
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js"></script>
+<![endif]-->
+<script type="text/javascript">
+/**
+ * Protect window.console method calls, e.g. console is not defined on IE
+ * unless dev tools are open, and IE doesn't define console.debug
+ */
+(function() {
+  if (!window.console) {
+    window.console = {};
+  }
+  // union of Chrome, FF, IE, and Safari console methods
+  var m = [
+    "log", "info", "warn", "error", "debug", "trace", "dir", "group",
+    "groupCollapsed", "groupEnd", "time", "timeEnd", "profile", "profileEnd",
+    "dirxml", "assert", "count", "markTimeline", "timeStamp", "clear"
+  ];
+  // define undefined methods as noops to prevent errors
+  for (var i = 0; i < m.length; i++) {
+    if (!window.console[m[i]]) {
+      window.console[m[i]] = function() {};
+    }    
+  } 
+})();
+</script>
+
+<script data-main="scripts/main" src="scripts/libs/require/require.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div id="wrap">
+	
+		<header>
+			<span class="alert alert-danger"><b><i class="fa fa-warning"></i> H-TEP beta version</b></span>
+			
+			<div class="container">
+	
+				<div class="row hidden-phone subHeader">
+					<div class="pull-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+					<div class="pull-right" id="loginDiv"></div>
+					<div id="loginFormContainer"></div>
+				</div>
+
+				<div class="navbar navbar">
+					<div class="navbar-inner visible-desktop">
+						
+							<a class="brand" href="/#!"></a>
+							
+							<div class="" id="menu">
+								<ul class="nav">
+									<li class="active"><a href="#!">Home</a></li>
+								</ul>
+								
+							</div>
+					</div>
+							
+					<div class="navbar-inner visible-phone visible-tablet">
+						
+							<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+	
+							<a class="brand" href="#">TEP-Hydrology</a>
+							
+							<div class="nav-collapse collapse" id="menuPhone">
+								<ul class="nav">
+									<li class="active"><a href="#!">Home</a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				
+			</div><!-- header container -->
+		</header>
+		
+		<div id="mainContainer"></div>
+ 		<!-- main -->
+	</div>
+	<!-- wrap -->
+	<footer class="footer">
+		credits <a href="http://esa.int" target="_blank">ESA</a> - designed by <a href="http://www.terradue.com" target="_blank">Terradue</a>
+<!--		<p class="pull-right"><strong><a href="http://terradue.github.io/doc-tep-hydrology" target="_blank">DOCUMENTATION</a></strong></p>-->
+	</footer>
+</body>
+</html>

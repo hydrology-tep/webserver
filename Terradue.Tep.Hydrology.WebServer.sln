@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terradue.Tep.Hydrology.WebServer", "Terradue.Tep.Hydrology.WebServer\Terradue.Tep.Hydrology.WebServer.csproj", "{B1CD14A4-3386-425E-A579-C462F9142D88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www-root", "www-root\www-root.csproj", "{82849FCC-AC3A-4C16-B98D-63974DDC3595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82849FCC-AC3A-4C16-B98D-63974DDC3595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82849FCC-AC3A-4C16-B98D-63974DDC3595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82849FCC-AC3A-4C16-B98D-63974DDC3595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82849FCC-AC3A-4C16-B98D-63974DDC3595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CD14A4-3386-425E-A579-C462F9142D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CD14A4-3386-425E-A579-C462F9142D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CD14A4-3386-425E-A579-C462F9142D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CD14A4-3386-425E-A579-C462F9142D88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

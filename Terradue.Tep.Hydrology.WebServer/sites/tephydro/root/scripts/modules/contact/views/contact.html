@@ -1,0 +1,30 @@
+﻿<script src='//www.google.com/recaptcha/api.js'></script>
+<div class="container">
+    <h3>Contact Us</h3>
+    {{#if success}}
+        <div class="alert alert-success"><b><i class="fa fa-thumbs-up"></i> Your request has been sent.</b><br/>We will answer to it as soon as possible.</div>
+    {{else}}
+    <form>
+        <div>
+            <div class="form-group">
+                <label>Your name <span title="This field is required.">*</span></label>
+                <div><input required="required" class="form-control form-text required" type="text" name="name" value="" size="60" maxlength="128"></input></div>
+            <div class="form-group">
+                <label>Organisation <span title="This field is required.">*</span></label>
+                <div><input required="required" class="form-control form-text required" type="text" name="organisation" value="" size="60" maxlength="128"></input></div>
+            <div class="form-group">
+                <label>Email address <span title="This field is required.">*</span></label>
+                <div>
+                    <input required="required" class="form-control form-text required" type="text" name="email" value="" size="60" maxlength="128"></input></div>
+            <div class="form-group">
+                <label>Comment <span title="This field is required.">*</span></label>
+                <div><textarea required="required" class="form-control form-textarea required" type="text" name="comment" value="" size="60" maxlength="128"></textarea></div>
+            <div class="form-group recaptchaWrapper">
+                <div class="g-recaptcha" data-sitekey="6LcFLy4UAAAAAIEzSm_HdSGf1Q29yJ0zOLHm7Qsq"></div>
+            </div>
+            <br />
+            <button class="btn btn-warning submitForm" value="Submit" type="submit">Submit</button>
+        </div>
+    </form>
+    {{/if}}
+</div>

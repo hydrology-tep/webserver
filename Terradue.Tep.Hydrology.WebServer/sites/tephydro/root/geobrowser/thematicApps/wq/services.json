@@ -1,0 +1,89 @@
+{
+    "features": [
+        {
+            "id": "https://hydrology-tep.eo.esa.int/t2api/service/wps/search?id=8ea494b2-f5c0-4602-b16d-be06499aee9e",
+            "properties": {
+                "categories": [
+                    {
+                        "@label": null,
+                        "@scheme": null,
+                        "@term": "WpsOffering"
+                    }
+                ],
+                "content": "EOMAP Water Quality Service",
+                "identifier": "8ea494b2-f5c0-4602-b16d-be06499aee9e",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                        "@rel": "alternate"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/search?id=8ea494b2-f5c0-4602-b16d-be06499aee9e",
+                        "@rel": "self",
+                        "@title": "Water Quality",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },
+                    {
+                        "@href": "http://hydrology-tep.eo.esa.int/geobrowser/thematicApps/wq/wq.png",
+                        "@rel": "icon",
+                        "@title": "Water quality icon",
+                        "@type": "image/png"
+                    }
+                ],
+                "offering": {
+                    "operation": [
+                        {
+                            "@code": "GetCapabilities",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "DescribeProcess",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=DescribeProcess&version=1.0&identifier=8ea494b2-f5c0-4602-b16d-be06499aee9e",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "Execute",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=Execute&version=1.0&identifier=8ea494b2-f5c0-4602-b16d-be06499aee9e",
+                            "@method": "POST"
+                        }
+                    ]
+                },
+                "publisher": "EOMAP",
+                "title": "Water Quality",
+                "updated": "2017-01-25T10:49:14Z"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": {
+        "Query": {
+            "@os:count": "1"
+        },
+        "identifier": "service/wps",
+        "itemsPerPage": "1",
+        "links": [
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps?format=json&count=2",
+                "@rel": "alternate"
+            },
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+        "startIndex": "1",
+        "title": "Discovery feed for service/wps",
+        "totalResults": "1",
+        "updated": "2016-04-26T12:49:14Z"
+    },
+    "type": "FeatureCollection"
+}

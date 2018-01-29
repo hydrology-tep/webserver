@@ -1,0 +1,58 @@
+
+.initiative p {
+	margin-bottom: 20px;
+}
+.initiative ol {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.initiative ol li {
+	margin-bottom: 20px;
+}
+
+.initiative h3 {
+	margin: 0px;
+}
+
+.initiative .pageTitle {
+	background-image: url(../img/initiative2.jpg);
+	background-position: 0px 2%;
+}
+
+.initiative-logo {
+	display: table-cell;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 6px;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.initiative-logo:hover{
+	-webkit-box-shadow: 0px 0px 6px gray;
+	-moz-box-shadow: 0px 0px 6px gray;
+	box-shadow: 0px 0px 6px gray;
+}
+
+/* responsive */
+/* Landscape phone to portrait tablet */
+@media (max-width: 979px) {
+	.initiative-logo {
+		display: table-cell;
+		border: none;
+		border-radius: 6px;
+		padding: 6px;
+		height: auto;
+		width: 200px;
+		margin: auto;
+		vertical-align: top;
+	}
+	.initiative-logo:hover{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+

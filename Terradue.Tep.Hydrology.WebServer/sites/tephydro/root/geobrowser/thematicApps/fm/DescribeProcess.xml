@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<wps:ProcessDescriptions service="WPS" version="1.0.0" xml:lang="en" xmlns:wps="http://www.opengis.net/wps/1.0.0">
+  <ProcessDescription statusSupported="true" storeSupported="true" wps:processVersion="1.0">
+    <Identifier xmlns="http://www.opengis.net/ows/1.1">Generate Flood Map</Identifier>
+    <Title xmlns="http://www.opengis.net/ows/1.1">Flood Mapping</Title>
+    <Abstract xmlns="http://www.opengis.net/ows/1.1"/>
+    <DataInputs>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">preeventfile</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Pre event file</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Pre event file</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">string</DataType>
+        </LiteralData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">posteventfile</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Post event file</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Post event file</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">string</DataType>
+        </LiteralData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">startdate</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Start date</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Start date</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">datetime</DataType>
+        </LiteralData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">enddate</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">End date</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">End date</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">datetime</DataType>
+        </LiteralData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">regionWKT</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Region with bounding box</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">The spatial range in the format of bounding box.</Abstract>
+        <BoundingBoxData xmlns="http://www.opengis.net/ows/1.1">
+          <Default>
+            <CRS>urn:ogc:def:crs:EPSG:6:6:4326</CRS>
+          </Default>
+          <Supported>
+            <CRS>urn:ogc:def:crs:EPSG:6:6:4326</CRS>
+          </Supported>
+        </BoundingBoxData>
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">Meanshiftspatialradius</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Mean shift spatial radius</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Mean shift spatial radius</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">integer</DataType>
+          <DefaultValue>5</DefaultValue>
+        </LiteralData>
+        
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">Numberofclasses</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Number of classes</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Number of classes</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">integer</DataType>
+          <DefaultValue>4</DefaultValue>
+        </LiteralData>
+        
+      </Input>
+      <Input maxOccurs="1" minOccurs="0">
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">OutputFormat</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Output Format</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">Output Format</Abstract>
+        <LiteralData>
+          <DataType xmlns="http://www.opengis.net/ows/1.1">string</DataType>
+          <AllowedValues xmlns="http://www.opengis.net/ows/1.1">
+            <Value>GeoTiff</Value>
+            <Value>Shapefile</Value>
+            <Value>GeoJson</Value>
+          </AllowedValues>
+        </LiteralData>
+      </Input>
+    </DataInputs>
+    <ProcessOutputs>
+      <Output>
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">result_distribution</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">Result Files Distribution Package</Title>
+        <Abstract xmlns="http://www.opengis.net/ows/1.1">This process returns a file with the list of result products. The default is Metalink document that is an extensible metadata file format that describes one or more computer files available for download. It specifies files appropriate for the user's language and operating system; facilitates file verification and recovery from data corruption.</Abstract>
+        <ComplexOutput>
+          <Default>
+            <Format>
+              <MimeType>application/xml</MimeType>
+            </Format>
+          </Default>
+          <Supported>
+            <Format>
+              <MimeType>application/xml</MimeType>
+            </Format>
+          </Supported>
+        </ComplexOutput>
+      </Output>
+      <Output>
+        <Identifier xmlns="http://www.opengis.net/ows/1.1">result_osd</Identifier>
+        <Title xmlns="http://www.opengis.net/ows/1.1">OpenSearch Description to the Results</Title>
+        <ComplexOutput>
+          <Default>
+            <Format>
+              <MimeType>application/xml</MimeType>
+            </Format>
+          </Default>
+          <Supported>
+            <Format>
+              <MimeType>application/xml</MimeType>
+            </Format>
+          </Supported>
+        </ComplexOutput>
+      </Output>
+    </ProcessOutputs>
+  </ProcessDescription>
+</wps:ProcessDescriptions>

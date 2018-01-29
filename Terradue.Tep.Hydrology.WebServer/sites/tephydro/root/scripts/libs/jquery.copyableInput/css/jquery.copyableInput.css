@@ -1,0 +1,32 @@
+
+/* COPYABLE INPUT - BY CERAS */
+
+.copyableInput {
+	display: inline-block;
+}
+
+.copyableInput>input[type='text'] {
+	height: 26px;
+	min-height: 26px;
+	box-sizing: border-box;
+	color: #999;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	padding: 5px 8px 3px 8px;
+	cursor: default;
+}
+
+.copyableInput>button{
+	height: 26px;
+	outline: none !important;
+}
+
+.copyableInput>button.copyableInput-round {
+	border-radius: 4px 4px 4px 4px !important;
+	padding-top: 0px;
+}

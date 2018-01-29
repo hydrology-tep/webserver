@@ -1,0 +1,89 @@
+{
+    "features": [
+		{
+            "id": "/t2api/service/wps/search?id=94d3b50c-36c7-4ab0-b184-80405734f22e",
+            "properties": {
+                "categories": [
+                    {
+                        "@label": null,
+                        "@scheme": null,
+                        "@term": "WpsOffering"
+                    }
+                ],
+                "content": "WOIS - AATSR Lake Temperature",
+                "identifier": "94d3b50c-36c7-4ab0-b184-80405734f22e",
+                "links": [
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                        "@rel": "alternate"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/search?id=94d3b50c-36c7-4ab0-b184-80405734f22e",
+                        "@rel": "self",
+                        "@title": "pconvert",
+                        "@type": "application/atom+xml"
+                    },
+                    {
+                        "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/description",
+                        "@rel": "search",
+                        "@title": "OpenSearch Description link",
+                        "@type": "application/opensearchdescription+xml"
+                    },
+                    {
+                        "@href": "http://hydrology-tep.eo.esa.int/geobrowser/thematicApps/wois/wois_small.png",
+                        "@rel": "icon",
+                        "@title": "WOIS icon",
+                        "@type": "image/png"
+                    }
+                ],
+                "offering": {
+                    "operation": [
+                        {
+                            "@code": "GetCapabilities",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=GetCapabilities",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "DescribeProcess",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=DescribeProcess&version=1.0&identifier=94d3b50c-36c7-4ab0-b184-80405734f22e",
+                            "@method": "GET"
+                        },
+                        {
+                            "@code": "Execute",
+                            "@href": "https://hydrology-tep.eo.esa.int/t2api/wps/WebProcessingService?service=WPS&request=Execute&version=1.0&identifier=94d3b50c-36c7-4ab0-b184-80405734f22e",
+                            "@method": "POST"
+                        }
+                    ]
+                },
+                "publisher": "Deimos",
+                "title": "WOIS - AATSR Lake Temperature",
+                "updated": "2016-06-16T10:49:14Z"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": {
+        "Query": {
+            "@os:count": "2"
+        },
+        "identifier": "service/wps",
+        "itemsPerPage": "2",
+        "links": [
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps?format=json&count=2",
+                "@rel": "alternate"
+            },
+            {
+                "@href": "https://hydrology-tep.eo.esa.int/t2api/service/wps/description",
+                "@rel": "search",
+                "@title": "OpenSearch Description link",
+                "@type": "application/opensearchdescription+xml"
+            }
+        ],
+        "startIndex": "1",
+        "title": "Discovery feed for service/wps",
+        "totalResults": "16",
+        "updated": "2016-04-26T12:49:14Z"
+    },
+    "type": "FeatureCollection"
+}

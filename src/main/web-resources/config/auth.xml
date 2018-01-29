@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<externalAuthentication>
+    <method name="umsso" active="true">
+        <!-- List of user groups expressed with regular expression -->
+        <!-- Each pattern matching corresponds to a privilege -->
+        <accountType>
+            <condition header="Umsso-Person-commonName" pattern=".+" />
+            <login header="Umsso-Person-commonName" register="true" mail="true" refresh="false">
+                <email header="Umsso-Person-Email" />
+            </login>
+        </accountType>
+    </method>
+</externalAuthentication>
