@@ -1,0 +1,13 @@
+[Unit]
+Description=HyperFastCGI service for Hydrology TEP
+
+[Service]
+Type=simple
+User=nginx
+Group=nginx
+ExecStart=/usr/bin/hyperfastcgi4 /config=/etc/hyperfastcgi/tephydro.config /loglevels=Standard /logfile=/var/log/hyperfastcgi/hydrotep.log
+Restart=on-failure
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

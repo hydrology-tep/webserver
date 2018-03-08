@@ -4,7 +4,7 @@
 
 	<groupId>com.terradue.tephydro</groupId>
 	<artifactId>webserver-tephydro</artifactId>
-	<version>1.4.4</version>
+	<version>1.5</version>
 	<packaging>rpm</packaging>
 
 	<name>Web Server for Tep Hydrology</name>
@@ -130,12 +130,12 @@
 							<filemode>644</filemode>
 							<configuration>noreplace</configuration>
 							<directoryIncluded>false</directoryIncluded>
-							<directory>/etc/httpd/conf.d</directory>
+							<directory>/etc/nginx/conf.d</directory>
 							<username>root</username>
 							<groupname>apache</groupname>
 							<sources>
 								<source>
-									<location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/config/tephydro-webserver-httpd.conf</location>
+									<location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/config/hydrology-tep.eo.esa.int.conf</location>
 								</source>
 							</sources>
 						</mapping>
@@ -165,9 +165,6 @@
 								<source>
 									<location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/config/web.config</location>
 								</source>
-								<source>
-									<location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/config/log4net.config</location>
-								</source>
 							</sources>
 						</mapping>
 						<mapping>
@@ -183,6 +180,45 @@
 								</source>
 							</sources>
 						</mapping>
+                        <mapping>
+                            <filemode>644</filemode>
+                            <configuration>noreplace</configuration>
+                            <directoryIncluded>false</directoryIncluded>
+                            <directory>/etc/supervisord.d</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/etc/supervisor/shibboleth.ini.tephydro</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                        <mapping>
+                            <filemode>644</filemode>
+                            <configuration>noreplace</configuration>
+                            <directoryIncluded>false</directoryIncluded>
+                            <directory>/etc/systemd/system</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/etc/hyperfastcgi/hyperfastcgi-tephydro.service</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                        <mapping>
+                            <filemode>644</filemode>
+                            <configuration>noreplace</configuration>
+                            <directoryIncluded>false</directoryIncluded>
+                            <directory>/etc/hyperfastcgi</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>/var/lib/jenkins/jobs/hydrology-tep/jobs/ESA.TepHydro/workspace/src/main/web-resources/etc/hyperfastcgi/tephydro.config</location>
+                                </source>
+                            </sources>
+                        </mapping>
 						<mapping>
 							<filemode>644</filemode>
 							<configuration>noreplace</configuration>
@@ -202,9 +238,12 @@
 						<fileEncoding>utf-8</fileEncoding>
 					</postinstallScriptlet>
 					<requires>
-						<require>httpd &gt;= 2.2</require>
-						<require>mod_ssl</require>
-						<require>shibboleth &gt;= 2.5</require>
+						<require>nginx</require>
+						<require>headers-more-nginx-module</require>
+                        <require>nginx-http-shibboleth</require>
+                        <require>hyperfastcgi</require>
+                        <require>supervisor</require>
+						<require>shibboleth &gt;= 2.6</require>
 					</requires>
 				</configuration>
 			</plugin>
