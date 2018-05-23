@@ -1,0 +1,574 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "Name": "BVI",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-65.10206942245466, 18.1792112742776, 0],
+                    [-65.05767307124287, 18.51487035981593, 0],
+                    [-64.24469870022057, 18.85358659398354, 0],
+                    [-64.1931783586983, 18.3174300271584, 0],
+                    [-65.10206942245466, 18.1792112742776, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Grand Cayman",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-81.43234970570762, 19.2123860523907, 0],
+                    [-81.50045443036582, 19.4686796553458, 0],
+                    [-81.02998235933802, 19.44833254423473, 0],
+                    [-81.01931757594488, 19.22430189226153, 0],
+                    [-81.43234970570762, 19.2123860523907, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Little Cayman",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-80.10688631656399, 19.54381495490323, 0],
+                    [-80.16544024458746, 19.78992877674597, 0],
+                    [-79.681091054858, 19.81523879187897, 0],
+                    [-79.6420728697967, 19.57963278697006, 0],
+                    [-80.10688631656399, 19.54381495490323, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Barbados",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-59.69016939772344, 12.95219028543775, 0],
+                    [-59.77667287839329, 13.39708783239354, 0],
+                    [-59.40613897698263, 13.3774215177233, 0],
+                    [-59.3254224820224, 12.98450280753436, 0],
+                    [-59.69016939772344, 12.95219028543775, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Central America",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-79.0209896351008, 5.56621164341002, 0],
+                    [-92.44585634465416, 14.65150806935403, 0],
+                    [-87.6706216100403, 19.01165665357585, 0],
+                    [-75.74965811959063, 9.606922789647468, 0],
+                    [-79.0209896351008, 5.56621164341002, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Santo Domingo",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-70.42703648214905, 18.12807803983216, 0],
+                    [-70.69124800487046, 19.02308126259452, 0],
+                    [-69.44431274260444, 18.90032818798538, 0],
+                    [-68.48903263524866, 18.10022901213538, 0],
+                    [-70.42703648214905, 18.12807803983216, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Grenada",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.92948358606699, 11.94726943155535, 0],
+                    [-61.7473823477493, 12.33836733641793, 0],
+                    [-61.43961172882415, 12.22672119798735, 0],
+                    [-61.64137198442593, 11.88504337961405, 0],
+                    [-61.92948358606699, 11.94726943155535, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Dominica",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.43108520143804, 15.14923357808339, 0],
+                    [-61.56354403122172, 15.63348072468708, 0],
+                    [-61.21500606321436, 15.67782320948982, 0],
+                    [-61.10103639151875, 15.20267712057673, 0],
+                    [-61.43108520143804, 15.14923357808339, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Guadeloupe",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.80368892261183, 15.7475207539446, 0],
+                    [-61.9034996909344, 16.48220451369848, 0],
+                    [-61.15966875441899, 16.57090498309077, 0],
+                    [-60.82646440908557, 16.05894000437647, 0],
+                    [-61.80368892261183, 15.7475207539446, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Guyana",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-60.6209375073452, 7.277594392138509, 0],
+                    [-59.71294296282999, 8.527511899630126, 0],
+                    [-56.91465054795793, 6.035810052363273, 0],
+                    [-57.56933743251067, 4.947336934528948, 0],
+                    [-60.6209375073452, 7.277594392138509, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Haiti AOI",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-73.95988387750158, 18.09304775364136, 0],
+                    [-73.62271868402233, 19.70028521108944, 0],
+                    [-71.93024808636795, 19.77256537486039, 0],
+                    [-71.95322096820429, 18.07228211183458, 0],
+                    [-73.95988387750158, 18.09304775364136, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Martinique",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.07244568533477, 14.32496404366668, 0],
+                    [-61.37038934569923, 14.84864870909398, 0],
+                    [-60.98553127570142, 14.99520180797035, 0],
+                    [-60.59871374118318, 14.42173894563764, 0],
+                    [-61.07244568533477, 14.32496404366668, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Mekong",
+            "descriptio": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-micr",
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": -1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [101.6307296328255, 22.8455345875281, 0],
+                    [103.6356099105527, 21.4418347475447, 0],
+                    [103.9929838176702, 19.38628332828298, 0],
+                    [105.5545113979896, 18.6928442952788, 0],
+                    [107.800045593576, 16.01815088226338, 0],
+                    [108.855730467779, 14.16072490100295, 0],
+                    [108.4543405178404, 13.64064562624989, 0],
+                    [109.0626077682102, 12.3032989197425, 0],
+                    [108.0681809172297, 11.53556284748816, 0],
+                    [107.3383430287567, 12.00611076274058, 0],
+                    [105.8388682740896, 11.36220308923704, 0],
+                    [107.5771979595508, 9.901027983978526, 0],
+                    [104.7548518638303, 8.241727440718734, 0],
+                    [104.3629131471221, 8.836103754722588, 0],
+                    [104.5916529747935, 9.851496624478209, 0],
+                    [102.0061497344189, 12.65001843624411, 0],
+                    [102.0089652785221, 13.86353674400134, 0],
+                    [100.9348427795804, 14.28455329975343, 0],
+                    [101.0514104796736, 16.6372928760174, 0],
+                    [100.5979253711658, 17.38026326852157, 0],
+                    [100.8847534886061, 19.18815789028201, 0],
+                    [99.94421068937248, 18.569015896528, 0],
+                    [99.08968286090476, 18.79190701427945, 0],
+                    [98.71698808657898, 19.85683124353571, 0],
+                    [101.6307296328255, 22.8455345875281, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Indonesia-Bandung",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [107.1338041251843, -6.944144654044686, 0],
+                    [107.3062975228714, -6.502325844225675, 0],
+                    [108.0084239729472, -6.803038258075184, 0],
+                    [107.8408854224985, -7.233508211317899, 0],
+                    [107.1338041251843, -6.944144654044686, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Indonesia-Cilacap",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [108.4267284240498, -7.900483874715863, 0],
+                    [108.4620731313522, -7.438891324943406, 0],
+                    [109.4675433578578, -7.51377767590506, 0],
+                    [109.3934553704037, -7.963156396953602, 0],
+                    [108.4267284240498, -7.900483874715863, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Indonesia Jakarta",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [106.5116274138817, -5.956641565809504, 0],
+                    [107.219778298877, -5.938798446531126, 0],
+                    [107.2151020474389, -6.589510696408227, 0],
+                    [106.5066279464545, -6.583807357777079, 0],
+                    [106.5116274138817, -5.956641565809504, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "St Lucia",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.15227432771555, 13.66457161631589, 0],
+                    [-61.15523084744266, 14.13184743180752, 0],
+                    [-60.76984460419385, 14.12365821907995, 0],
+                    [-60.77585745045101, 13.65612646489867, 0],
+                    [-61.15227432771555, 13.66457161631589, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Jamaica",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-78.35991349235155, 17.83047895579784, 0],
+                    [-78.38723417415531, 18.62375358150482, 0],
+                    [-76.24264402427313, 18.42085455312883, 0],
+                    [-76.13260603393051, 17.58183064818771, 0],
+                    [-78.35991349235155, 17.83047895579784, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "St Maarten",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-63.28244222725944, 17.85432898125341, 0],
+                    [-63.30200602690917, 18.35521427949954, 0],
+                    [-62.53413979452086, 18.29557679160454, 0],
+                    [-62.56873682313949, 17.7885718506841, 0],
+                    [-63.28244222725944, 17.85432898125341, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "St Vincent and Grenadines",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-61.61598558403578, 12.45026145786124, 0],
+                    [-61.35418207893191, 13.4129091852751, 0],
+                    [-60.87549236130801, 13.36218921852199, 0],
+                    [-61.27159486548101, 12.35411738886211, 0],
+                    [-61.61598558403578, 12.45026145786124, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Southern Africa",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [18.11608664633934, -35.15352388604152, 0],
+                    [10.94565183491472, -15.15020216346774, 0],
+                    [40.70537441332271, -15.83631331519668, 0],
+                    [29.20592974159711, -34.56582220633176, 0],
+                    [18.11608664633934, -35.15352388604152, 0]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "Name": "Trinidad and Tobago",
+            "descriptio": null,
+            "timestamp": null,
+            "begin": null,
+            "end": null,
+            "altitudeMo": null,
+            "tessellate": 1,
+            "extrude": -1,
+            "visibility": -1
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-62.1591835250681, 10.70273071578297, 0],
+                    [-60.6343608879352, 11.51192188735489, 0],
+                    [-60.34048265062066, 11.14561137176764, 0],
+                    [-61.35584814905822, 9.78594074639256, 0],
+                    [-62.1591835250681, 10.70273071578297, 0]
+                ]
+            ]
+        }
+    }]
+}
