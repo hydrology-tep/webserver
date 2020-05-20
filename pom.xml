@@ -4,7 +4,7 @@
 
 	<groupId>com.terradue.tephydro</groupId>
 	<artifactId>webserver-tephydro</artifactId>
-	<version>2.5.1</version>
+	<version>2.5.2</version>
 	<packaging>rpm</packaging>
 
 	<name>Web Server for Tep Hydrology</name>
