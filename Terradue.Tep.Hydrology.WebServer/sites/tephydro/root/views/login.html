@@ -1,0 +1,19 @@
+{{#current}}			
+	<a href="/#!settings/profile" data-toggle="tooltip" title="Profile" class="Topbar__login">{{#if ProfileError}}<i class="fa fa-warning text text-warning"></i> {{/if}}{{ Username }}</a>&nbsp;
+	{{#ifGreaterThan Balance 0}}<span class="badge badge-info" style="vertical-align: middle;">{{Balance}}</span>&nbsp;&nbsp;{{/if}}
+	{{#ifLevel Level "ADMIN" }}
+		<a href="/#!cpanel" data-toggle="tooltip" title="Control Panel" class="Topbar__login"><i class="fa fa-cog"/></a>&nbsp;
+	{{/ifLevel}}
+	<a href="{{ conf.contactLink }}" data-toggle="tooltip" title="Contact" class="Topbar__login"><i class="fa fa-envelope"/></a>&nbsp;
+	<a href="{{ conf.docsUrl }}" target="_blank" data-toggle="tooltip" title="Documentation" class="Topbar__login"><i class="fa fa-book"/></a>&nbsp;
+	{{#if conf.hasSupport}}
+		<a href="{{ conf.supportUrl }}" target="_blank" data-toggle="tooltip" title="Support" class="Topbar__login"><i class="fa fa-question"/></a>&nbsp;
+	{{/if}}
+	<a href="/t2api/logout?redirect_uri={{conf.signoutRedirectUri}}" data-toggle="tooltip" title="Sign out" class="Topbar__login"><i class="fa fa-sign-out"/></a>
+
+{{/current}}
+{{#noLogged}}
+	<a href="/t2api/oauth" class="Topbar__login">sign in</a> 
+	<span class="Topbar__loginSeparator">|</span> 
+	<a href="/guest/register" class="Topbar__login"> register </a>
+{{/noLogged}}
